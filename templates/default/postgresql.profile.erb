@@ -1,0 +1,7 @@
+PGSQL_HOME=<%= @postgresql_path %>
+PROJ_HOME=<%= @proj_path %>
+GEOS_HOME=<%= @geos_path %>
+POSTGIS_HOME=<%= @postgis_path %>
+LD_LIBRARY_PATH=$PGSQL_HOME/lib:$PROJ_HOME/lib:$GEOS_HOME/lib:$POSTGIS_HOME/lib:$LD_LIBRARY_PATH
+PATH=$PGSQL_HOME/bin:$PATH
+export PGSQL_HOME PROJ_HOME GEOS_HOME POSTGIS_HOME LD_LIBRARY_PATH PATH
