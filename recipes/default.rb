@@ -1,6 +1,7 @@
 include_recipe "cookbooks-postgres83::install_postgresql"
 include_recipe "cookbooks-postgres83::copy_hba"
 include_recipe "cookbooks-postgres83::copy_profile"
+include_recipe "cookbooks-postgres83::apt_update"
 include_recipe "cookbooks-postgres83::install_proj"
 include_recipe "cookbooks-postgres83::install_geos"
 include_recipe "cookbooks-postgres83::install_flex"
